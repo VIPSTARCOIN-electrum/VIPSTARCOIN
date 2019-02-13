@@ -2394,7 +2394,7 @@ static const CRPCCommand commands[] =
     { "blockchain",         "pruneblockchain",        &pruneblockchain,        true,  {"height"} },
     { "blockchain",         "verifychain",            &verifychain,            true,  {"checklevel","nblocks"} },
     { "blockchain",         "getaccountinfo",         &getaccountinfo,         true,  {"contract_address"} },
-    { "blockchain",         "getcontractcode",        &getcontractcode,        {"contract_address"} },
+    { "blockchain",         "getcontractcode",        &getcontractcode,        true,  {"contract_address"} },
     { "blockchain",         "getstorage",             &getstorage,             true,  {"address, index, blockNum"} },
 
     { "blockchain",         "preciousblock",          &preciousblock,          true,  {"blockhash"} },
@@ -2407,7 +2407,7 @@ static const CRPCCommand commands[] =
     { "hidden",             "waitfornewblock",        &waitfornewblock,        true,  {"timeout"} },
     { "hidden",             "waitforblock",           &waitforblock,           true,  {"blockhash","timeout"} },
     { "hidden",             "waitforblockheight",     &waitforblockheight,     true,  {"height","timeout"} },
-	{ "blockchain",         "listcontracts",          &listcontracts,          true,  {"start", "maxDisplay"} },
+    { "blockchain",         "listcontracts",          &listcontracts,          true,  {"start", "maxDisplay"} },
     { "blockchain",         "gettransactionreceipt",  &gettransactionreceipt,  true,  {"hash"} },
     { "blockchain",         "searchlogs",             &searchlogs,             true,  {"fromBlock", "toBlock", "address", "topics"} },
 
